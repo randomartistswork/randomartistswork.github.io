@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Image Picker</title>
+    <title>Peter Halley</title>
     <style>
         body, html {
             height: 100%;
@@ -13,32 +13,23 @@
             align-items: center;
             background-color: #f0f0f0;
         }
-        #randomImage {
-            max-width: 90vw;
-            max-height: 90vh;
-            border: 5px solid #ccc;
-            border-radius: 10px;
-        }
     </style>
 </head>
 <body>
 
-    <img id="randomImage" src="" alt="Random Image">
+    <img id="randomImage" src="" alt="Peter Halley Art">
 
     <script>
-        // List of image URLs (modify with your actual image file names)
         const images = [
-            'images/photo1.jpg',
-            'images/photo2.jpg',
-            'images/photo3.png',
-            'images/photo4.gif'
+            'images/2020-removebg-preview.png',
+            'images/Ascendant-removebg-preview.png,
+            'images/Halley+The+Covenant+2023-removebg-preview.png,
+            'images/PHP+23-29-removebg-preview.png'
         ];
 
-        // Choose a random image
         const randomIndex = Math.floor(Math.random() * images.length);
         const randomImage = images[randomIndex];
 
-        // Display the random image in the img tag
         document.getElementById('randomImage').src = randomImage;
     </script>
 
