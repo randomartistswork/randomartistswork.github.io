@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Image Picker</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        #randomImage {
+            max-width: 90vw;
+            max-height: 90vh;
+            border: 5px solid #ccc;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <img id="randomImage" src="" alt="Random Image">
+
+    <script>
+        // List of image URLs (modify with your actual image file names)
+        const images = [
+            'images/photo1.jpg',
+            'images/photo2.jpg',
+            'images/photo3.png',
+            'images/photo4.gif'
+        ];
+
+        // Choose a random image
+        const randomIndex = Math.floor(Math.random() * images.length);
+        const randomImage = images[randomIndex];
+
+        // Display the random image in the img tag
+        document.getElementById('randomImage').src = randomImage;
+    </script>
+
+</body>
+</html>
